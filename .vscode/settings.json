@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/5504a0ac-a4fe-4671-8d35-50711d0cab2b/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/KumarSatyam",
+    "appService.deploySubpath": "."
+}

@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  color: #222222;
+  font-size: 1.5em;
+  font-family:  sans-serif;
+}
+
+/*---------- heading ----------- */
+.masthead {
+    padding: 15em 0;
+    background-image: url("/images/Document from Jha.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 1em solid #ffcf33;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h1{
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 25px 0;
+    letter-spacing: 2px;
+    color: var(--colorPrincipal);
+}
+
+/*Fecha*/
+.time{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    background-color: #E0EFF1;
+    color: var(--colorSecundario);
+    border-radius: 20px;
+    box-shadow: 0 0 0 3px var(--colorSombra);
+}
+
+h3{
+    font-weight: 400;
+}
+
+
+/*Contenido*/
+.content{
+    padding-bottom: 20px;
+}
+
+.timeline ul li h2{
+    font-weight: 500;
+    color: var(--colorPrincipal);
+}
+
+.timeline ul li p{
+    margin: 10px 0;
+    font-weight: 300;
+}
+.masthead-intro {
+  font-size: 2em;
+  font-family: sans-serif;
+  text-align: center;
+  color: #e5e5e5;
+  margin-bottom: 0.1em;
+}
+
+/*---------- section ----------- */
+.intro,
+.where-Im-from,
+.more-about-me {
+  width: 100%;
+  font-size: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  text-align: left;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.intro > p,
+.where-Im-from > p,
+.more-about-me > p {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+section > h1 {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 50px;
+  padding-top: 30px;
+}
+
+.more-about-me > h2 {
+  font-size: 1.2em;
+  font-family: "sans-serif";
+  font-weight: bold;
+  color: #f7e199;
+}
+
+/*---------- footer ----------- */
+
+a:hover {
+  color: #000;
+ 
+}
+
+@media only screen and (max-width:500px){
+ 
+  .masthead-heading {
+    font-size: 3em;
+  }
+  .intro,
+  .where-Im-from,
+  .more-about-me,
+  .content-footer {
+    font-size: 1em;
+    height: 140vh;
+  }
+ .masthead{
+  width: 100%;
+  height: auto;
+ }
+ .text{
+  font-size: 1.5em;
+  margin-top: 60px;
+  margin-bottom: 60px;
+ }
+}
